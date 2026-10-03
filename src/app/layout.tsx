@@ -30,8 +30,8 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Gizem & Kaan — Düğün Davetiyesi",
-  description: "4 Eylül 2027 · Yalı Kır Düğünevi, Çerkezköy — Gizem & Kaan'ın düğününe davetlisiniz.",
+  title: "Gizem & Mehmet — Düğün Davetiyesi",
+  description: "4 Eylül 2027 · Yalı Kır Düğünevi, Çerkezköy — Gizem & Mehmet'in düğününe davetlisiniz.",
 };
 
 export const viewport: Viewport = {

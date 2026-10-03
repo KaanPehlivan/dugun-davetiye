@@ -77,7 +77,7 @@ const YALI = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/sites/dugunsepetim-org-
 
 export const content: InvitationContent = {
   bride: "Gizem",
-  groom: "Kaan",
+  groom: "Mehmet",
   dateLabel: "4 Eylül 2027",
   eyebrow: "Evleniyoruz",
   program: [
