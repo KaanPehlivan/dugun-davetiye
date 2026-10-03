@@ -1,26 +1,58 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Altın Kemer palette (extracted from computed styles) */
+  --ak-olive: #5a6650;
+  --ak-sage: #7d8b6f;
+  --ak-sage-light: #a8b897;
+  --ak-sage-line: rgba(168, 184, 151, 0.34);
+  --ak-gold: #d8c49a;
+  --ak-gold-deep: #c2a878;
+  --ak-ink: #3a3f36;
+  --ak-muted: #8b9284;
+  --ak-bg: #fbf9f4;
+  --ak-cream: #fffcf7;
+  --ak-stone: #f4f1ea;
+  --ak-night: #2c261f;
+
+  /* Yalı Kır Düğünevi accents (logo crimson) */
+  --ak-rose: #cc2a57;
+  --ak-rose-soft: #e8a7b8;
+  --ak-blush: #f6c9d4;
+  --ak-forest: #3e4836;
+
+  --font-script: var(--font-allura), cursive;
+  --font-display: var(--font-playfair), Georgia, serif;
+  --font-body: var(--font-lora), Georgia, serif;
+  --font-caps: var(--font-cormorant), Georgia, serif;
+
+  --background: var(--ak-bg);
+  --foreground: var(--ak-ink);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-olive: var(--ak-olive);
+  --color-sage: var(--ak-sage);
+  --color-gold: var(--ak-gold);
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-display);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
+  margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  -webkit-tap-highlight-color: transparent;
+}
+
+html.ak-locked,
+html.ak-locked body {
+  overflow: hidden;
 }
